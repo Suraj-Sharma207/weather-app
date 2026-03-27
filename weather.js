@@ -35,7 +35,9 @@ async function getWeather(city){
             iconWeather.src = "images/rain.png";
         } else if (weatherMain === "Drizzle") {
             iconWeather.src = "images/drizzle.png";
-        }
+        }else if (weatherMain === "Haze") {
+            iconWeather.src = "images/haze.png";
+        }    
      } catch (error) {
         console.log(error);
         alert("Something went wrong");
